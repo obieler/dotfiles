@@ -1,3 +1,6 @@
+[user]
+    email = <your email>
+    name = <your complete name>
 [core]
     editor = vim
 [diff]
