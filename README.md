@@ -16,6 +16,9 @@ Config files
   * source this file in .zshrc 
 * [Colorls](.config/colorls/dark_colors.yaml)
   * `~/.config/colors/dark_colors.yaml`
+* [Aliases](.alias)
+  * `~/.alias`
+  * source this file in .zshrc
 
 
 Install Atom packages
