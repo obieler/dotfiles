@@ -9,6 +9,8 @@ Config files
   * update name \+ email
 * [Shutter](.shutter)
   * `~/.shutter`
+* [Terminator](.config/terminator/config)
+  * `~/.config/terminator/config`
 * [Powerlevel9k](.powerlevel9k) 
   * `~/.powerlevel9k`
   * source this file in .zshrc 
@@ -21,8 +23,8 @@ Install Atom packages
 
 `./bin/install-atom-packages.sh`
 
-Developer
----------
+Author
+------
 
   * [Olivier Bieler](https://github.com/obieler)
 

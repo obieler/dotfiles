@@ -1,0 +1,55 @@
+[global_config]
+  title_transmit_bg_color = "#e5de8d"
+  title_transmit_fg_color = "#000000"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = d6f8fdff-0e60-42a5-a2ea-65f33acda361
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 3840:0
+      size = 1920, 1172
+      title = Terminator
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 958
+      ratio = 0.500261096606
+      type = HPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = d6f8fdff-0e60-42a5-a2ea-65f33acda361
+    [[[terminal3]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = bb5759d8-9f2d-4886-9d9c-63e3ab5a8bbe
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#121212"
+    cursor_color = "#bbbbbb"
+    font = Hack Nerd Font 9
+    foreground_color = "#bbbbbb"
+    palette = "#121212:#fa2573:#98e123:#dfd460:#1080d0:#8700ff:#43a8d0:#bbbbbb:#555555:#f6669d:#b1e05f:#fff26d:#00afff:#af87ff:#51ceff:#ffffff"
+    scroll_on_keystroke = False
+    scrollback_infinite = True
+    use_system_font = False
+  [[test]]
+    background_color = "#121212"
+    cursor_color = "#bbbbbb"
+    font = Hack Nerd Font 9
+    foreground_color = "#bbbbbb"
+    palette = "#121212:#fa2573:#20b2aa:#dfd460:#1080d0:#8700ff:#43a8d0:#bbbbbb:#555555:#f6669d:#87c3bc:#fff26d:#00afff:#af87ff:#51ceff:#ffffff"
+    scroll_on_keystroke = False
+    scrollback_infinite = True
+    use_system_font = False
