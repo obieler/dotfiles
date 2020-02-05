@@ -11,6 +11,8 @@ Config files
   * `~/.shutter`
 * [Terminator](.config/terminator/config)
   * `~/.config/terminator/config`
+* [Zsh with Oh My Zsh](.zshrc)
+  * `~/.zshrc`
 * [Powerlevel9k](.powerlevel9k) 
   * `~/.powerlevel9k`
   * source this file in .zshrc 
