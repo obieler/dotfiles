@@ -1,0 +1,44 @@
+# Main Colors
+unrecognized_file: lemonchiffon
+recognized_file:   lemonchiffon
+dir:               dodgerblue
+
+# Link
+dead_link: red
+link:      cyan
+
+# special files
+socket:    green
+blockdev:  green
+chardev:   green
+
+# Access Modes
+write:     webgray
+read:      webgray
+exec:      webgray
+no_access: webgray
+
+# Age
+day_old:     lightseagreen
+hour_old:    lightseagreen
+no_modifier: webgray
+
+# File Size
+file_large:  orange
+file_medium: gold
+file_small:  webgray
+
+# Random
+report: white
+user:   webgray
+tree:   cyan
+empty:  yellow
+error:  red
+normal: webgray
+
+# Git
+addition:     chartreuse
+modification: darkkhaki
+deletion:     darkred
+untracked:    darkorange
+unchanged:    forestgreen
