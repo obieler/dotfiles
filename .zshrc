@@ -7,10 +7,11 @@ export ZSH="/home/obieler/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME="robbyrussell"
 
-source /home/obieler/.powerlevel9k
+ZSH_THEME="powerlevel10k/powerlevel10k"
+POWERLEVEL9K_MODE='nerdfont-complete'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -28,8 +29,14 @@ source /home/obieler/.powerlevel9k
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -64,7 +71,7 @@ source /home/obieler/.powerlevel9k
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fabric git-open django npm pyenv)
+plugins=(git fabric django npm pyenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,9 +92,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -99,12 +103,24 @@ source $ZSH/oh-my-zsh.sh
 
 source /home/obieler/.alias
 
+notify-send -i /home/obieler/Documents/Perso/Img/Divers/drebin1.jpg 'Welcome on board!'
+
 export WP_ENV=manager
-export HISTTIMEFORMAT="%d/%m/%y %T "
 
-notify-send -i /home/obieler/Documents/Perso/Img/Divers/drebin1.jpg  'Welcome on board !'
+export PATH="/home/obieler/.pyenv/bin:$PATH"
+export PATH="/home/obieler/.local/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export HISTTIMEFORMAT="%y/%m/%d %T "
 
-source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source /home/obieler/.oh-my-zsh/custom/themes/powerlevel10k # https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source /home/obieler/.powerlevel9k
