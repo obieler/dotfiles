@@ -24,6 +24,7 @@ alias pw='atom /run/user/1000/keybase/kbfs'
 # GIT
 alias gitdiff='git difftool --dir-diff HEAD .'
 alias gitd='git difftool --dir-diff'
+alias gitl='git log --pretty=oneline --abbrev-commit --graph --decorate'
 # Personnal various
 alias lc='atom /home/obieler/Documents/DevRun/Toolbox/Linux/commands.sh'
 alias morelc='more /home/obieler/Documents/DevRun/Toolbox/Linux/commands.sh'
