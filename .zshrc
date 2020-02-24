@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/obieler/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -11,7 +11,6 @@ export ZSH="/home/obieler/.oh-my-zsh"
 # ZSH_THEME="robbyrussell"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
-POWERLEVEL9K_MODE='nerdfont-complete'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -101,14 +100,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source /home/obieler/.alias
+source ~/.alias
 
-notify-send -i /home/obieler/Documents/Perso/Img/Divers/drebin1.jpg 'Welcome on board!'
+notify-send -i ~/Documents/Perso/Img/Divers/drebin1.jpg 'Welcome on board!'
 
 export WP_ENV=manager
 
-export PATH="/home/obieler/.pyenv/bin:$PATH"
-export PATH="/home/obieler/.local/bin:$PATH"
+export PATH="~/.pyenv/bin:$PATH"
+export PATH="~/.local/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 export HISTTIMEFORMAT="%y/%m/%d %T "
@@ -123,4 +122,4 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /home/obieler/.powerlevel9k
+source ~/.powerlevel9k
