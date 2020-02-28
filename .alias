@@ -2,6 +2,7 @@
 alias showtime='while true; do tput clear; date +"%H : %M : %S" | figlet -k | lolcat -F 0.5 ; sleep 1; done'
 alias ls='colorls -l --sd'
 alias colortest='for code ({000..255}) print -P -- "$code: %F{$code}This is how your text would look like%f"'
+alias history='history -i 1'
 # Pyenv, Pip
 alias pyenvdeactivate='pyenv deactivate'
 alias pipuninstallall='pip uninstall -y -r <(pip freeze)'
